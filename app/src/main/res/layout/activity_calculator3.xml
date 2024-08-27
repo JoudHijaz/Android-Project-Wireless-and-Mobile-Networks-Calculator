@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator3Activity">
+
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Power Transmitted Calculator"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042">
+
+        <EditText
+            android:id="@+id/editTextLP"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Path Loss:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerLP"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096">
+
+        <EditText
+            android:id="@+id/editTextFreq"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Frequency (Hz):"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerFreq"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151">
+
+        <EditText
+            android:id="@+id/editTextGt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Transmit Antenna Gain:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerGt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206">
+
+        <EditText
+            android:id="@+id/editTextGr"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Receive Antenna Gain:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerGr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261">
+
+        <EditText
+            android:id="@+id/editTextR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Data Rate (bps):"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerR"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316">
+
+        <EditText
+            android:id="@+id/editTextLf"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Antenna Feed Line Loss:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerLf"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371">
+
+        <EditText
+            android:id="@+id/editTextOther"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Other Losses:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerOther"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426">
+
+        <EditText
+            android:id="@+id/editTextLfMargin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Feed Margin:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerLfMargin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481">
+
+        <EditText
+            android:id="@+id/editTextAr"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Receiver Amplifier Gain:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerAr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536">
+
+        <EditText
+            android:id="@+id/editTextNf"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Noise Figure Total:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerNf"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59">
+
+        <EditText
+            android:id="@+id/editTextTemp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Noise Temp (Kelvin):"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerTemp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644">
+
+        <EditText
+            android:id="@+id/editTextM"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Link Margin:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerM"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewHeader"
+        app:layout_constraintVertical_bias="0.75">
+
+        <EditText
+            android:id="@+id/editTextBER"
+            android:layout_width="430dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter BER (dB):"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout55"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:background="@drawable/blue_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewHeader"
+        app:layout_constraintVertical_bias="0.804">
+
+        <TextView
+            android:id="@+id/textViewWhatever"
+            android:layout_width="230dp"
+            android:layout_height="44dp"
+            android:text="  Choose The Modulation Type"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
+
+        <Spinner
+            android:id="@+id/spinnerModulation"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutW"
+        android:layout_width="430dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewHeader"
+        app:layout_constraintVertical_bias="0.696">
+
+        <EditText
+            android:id="@+id/editTextAt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Transmitter Amplifier Gain:"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerAt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy_blue"
+        android:text="CALCULATE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewHeader"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/blue_border"
+        android:gravity="center|start"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.288" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

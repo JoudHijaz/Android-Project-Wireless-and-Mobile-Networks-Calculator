@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">YourAppName</string>
+
+    <string-array name="protocol_types">
+        <item>Pure ALOHA</item>
+        <item>Slotted ALOHA</item>
+        <item>Unslotted Nonpersistent CSMA</item>
+        <item>Slotted Nonpersistent CSMA</item>
+        <item>Unslotted 1-persistent CSMA</item>
+        <item>Slotted 1-persistent CSMA</item>
+    </string-array>
+</resources>

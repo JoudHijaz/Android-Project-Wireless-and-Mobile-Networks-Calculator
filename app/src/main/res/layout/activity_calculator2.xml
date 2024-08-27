@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator2Activity">
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Resource Elements and OFDM Symbols"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextBandwidth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bandwidth (kHz):"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextSubcarrierSpacing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Subcarrier Spacing (kHz):"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextBandwidth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextOFDMSymbols"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Number of OFDM Symbols:"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editTextSubcarrierSpacing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextResourceBlockDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Duration of the Resource Block (ms):"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextOFDMSymbols"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextQAMBits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Number of QAM Bits:"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editTextResourceBlockDuration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextParallelResourceBlocks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Number of Parallel Resource Blocks:"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editTextQAMBits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonCalculate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/navy_blue"
+        android:text="CALCULATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextParallelResourceBlocks" />
+
+    <TextView
+        android:id="@+id/textViewResults2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalculate2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator1Activity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Digital Communication System Design and Analysis."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextBandwidth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bandwidth (kHz):"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextQuantizerBits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Number of bits for quantizer:"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editTextBandwidth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextSourceEncoderRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Source encoder rate:"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextQuantizerBits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextChannelEncoderRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Channel encoder rate:"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editTextSourceEncoderRate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextInterleaverBits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Number of bits for interleaver:"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editTextChannelEncoderRate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/navy_blue"
+        android:text="CALCULATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextInterleaverBits" />
+
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalculate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

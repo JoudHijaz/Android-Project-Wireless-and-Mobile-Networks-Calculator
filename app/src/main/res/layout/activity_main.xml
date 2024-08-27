@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/open">
+
+    <Button
+        android:id="@+id/button_calculator1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy_blue"
+        android:text="Calculator 1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_calculator2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy_blue"
+        android:text="Calculator 2"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_calculator3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy_blue"
+        android:text="Calculator 3"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_calculator4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy_blue"
+        android:text="Calculator 4"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_calculator5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy_blue"
+        android:text="Calculator 5"
+        android:textColor="@android:color/white" />
+</LinearLayout>

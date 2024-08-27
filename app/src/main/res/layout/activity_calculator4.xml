@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator4Activity">
+
+    <TextView
+        android:id="@+id/textViewTitle4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Network Throughput Calculator"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDataTransmissionBandwidth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Data Transmission Bandwidth (Mbps):"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Spinner
+        android:id="@+id/spinnerProtocolType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextDataTransmissionBandwidth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextPropagationDelay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Maximum Signal Propagation Delay (μsec):"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/spinnerProtocolType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextFrameSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Frame Size (Kbits):"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editTextPropagationDelay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextFrameRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Frame Rate (Kfps):"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editTextFrameSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/buttonCalculate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy_blue"
+        android:text="CALCULATE"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitle4" />
+
+    <TextView
+        android:id="@+id/textViewResults4"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalculate4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
